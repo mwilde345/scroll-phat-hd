@@ -17,7 +17,7 @@ def get_pixel(x, y):
     if img.getpalette() is not None:
         r, g, b = img.getpalette()[p:p + 3]
         p = max(r, g, b)
-
+    p = max(p)
     return p / 255.0
 
 try:
