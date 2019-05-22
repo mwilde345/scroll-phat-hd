@@ -25,8 +25,8 @@ try:
         for y in range(0, scrollphathd.DISPLAY_HEIGHT):
             brightness = get_pixel(x, y)
             scrollphathd.pixel(x, 6 - y, brightness * IMAGE_BRIGHTNESS)
-
-    scrollphathd.show()
+    while True:
+        scrollphathd.show()
 except KeyboardInterrupt:
     scrollphathd.clear()
     scrollphathd.show()
