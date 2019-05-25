@@ -55,7 +55,7 @@ def jokes():
   scrollphathd.show()
   for x in range(line_length):
       scrollphathd.scroll(1, 0)
-      time.sleep(.007)
+      time.sleep(.01)
       scrollphathd.show()
   scrollphathd.scroll(0,0)
   scrollphathd.clear()

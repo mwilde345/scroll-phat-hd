@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import time
-
+from datetime import datetime
 import scrollphathd
 from scrollphathd.fonts import font5x5
 
@@ -26,7 +26,7 @@ BRIGHTNESS = 0.3
 #   (e.g. if you're using it in a Pimoroni Scroll Bot)
 # scrollphathd.rotate(degrees=180)
 
-while True:
+for sec in range(0,6):
     scrollphathd.clear()
 
     # Grab the "seconds" component of the current time
@@ -67,8 +67,9 @@ while True:
         scrollphathd.set_pixel(int(seconds_progress), 6, BRIGHTNESS)
 
     # Display the time (HH:MM) in a 5x5 pixel font
+    t = datetime.now() + timedelta(hours=9)
     scrollphathd.write_string(
-        time.strftime("%H:%M"),
+        t.strftime("%H:%M"),
         x=0,                   # Align to the left of the buffer
         y=0,                   # Align to the top of the buffer
         font=font5x5,          # Use the font5x5 font we imported above
