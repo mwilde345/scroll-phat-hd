@@ -10,7 +10,7 @@ from look_right import look_right
 from look_up import look_up
 from roll import roll
 
-seq = ["blink","look_left","look_right","look_up","look_down","roll"]
+seq = ["blink","blink","blink","look_left","look_right","look_up","look_down","roll"]
 fileMap = {
   "blink": blink,
   "look_left": look_left,
@@ -20,8 +20,8 @@ fileMap = {
   "roll": roll
 }
 
-for x in range(20):
+for x in range(25):
   item = random.choice(seq)
   fileMap[item]()
   neutral()
-  time.sleep(random.randint(1,4))
+  time.sleep(random.randint(1,3))
