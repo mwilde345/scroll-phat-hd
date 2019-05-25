@@ -10,18 +10,19 @@ from look_right import look_right
 from look_up import look_up
 from roll import roll
 
-seq = ["blink","blink","blink","look_left","look_right","look_up","look_down","roll"]
-fileMap = {
-  "blink": blink,
-  "look_left": look_left,
-  "look_right": look_right,
-  "look_up": look_up,
-  "look_down": look_down,
-  "roll": roll
-}
+def eye_seq():
+  seq = ["blink","blink","blink","look_left","look_right","look_up","look_down","roll"]
+  fileMap = {
+    "blink": blink,
+    "look_left": look_left,
+    "look_right": look_right,
+    "look_up": look_up,
+    "look_down": look_down,
+    "roll": roll
+  }
 
-for x in range(25):
-  item = random.choice(seq)
-  fileMap[item]()
-  neutral()
-  time.sleep(random.randint(1,3))
+  for x in range(25):
+    item = random.choice(seq)
+    fileMap[item]()
+    neutral()
+    time.sleep(random.randint(1,3))

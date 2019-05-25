@@ -15,7 +15,7 @@ def blink():
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
     scrollphathd.show()
     time.sleep(0.001)
-  time.sleep(.005)
+  time.sleep(.002)
   for data in BLINK_REVERSE:
     for x in range(0, scrollphathd.DISPLAY_WIDTH):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
