@@ -9,6 +9,9 @@ from myclock import myclock
 from jokes import jokes
 from amazon import amazon
 
+scrollphathd.clear()
+scrollphathd.show()
+
 seq = ["eye_seq","car","myclock","jokes","amazon"]
 fileMap = {
   "eye_seq": eye_seq,

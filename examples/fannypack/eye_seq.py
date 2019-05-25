@@ -21,7 +21,7 @@ def eye_seq():
     "roll": roll
   }
 
-  for x in range(25):
+  for x in range(10):
     item = random.choice(seq)
     fileMap[item]()
     neutral()

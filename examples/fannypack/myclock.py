@@ -20,7 +20,7 @@ Press Ctrl+C to exit!
 DISPLAY_BAR = False
 
 # Brightness of the seconds bar and text
-BRIGHTNESS = 0.3
+BRIGHTNESS = 0.7
 
 # Uncomment the below if your display is upside down
 #   (e.g. if you're using it in a Pimoroni Scroll Bot)
