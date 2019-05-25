@@ -1,16 +1,14 @@
 #!/usr/bin/python
 from eye import get_eye_data
-import time
+from image_load imporimport time
 import scrollphathd
 IMAGE_BRIGHTNESS = .6
 
-ROLL = get_eye_data("roll")
-ROLL_REVERSE = ROLL[::-1]
-def roll():
-  for data in ROLL:
+NEUTRAL = get_image_data("neutral.bmp")
+def neutral():
+  for data in NEUTRAL:
     for x in range(0, scrollphathd.DISPLAY_WIDTH):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
           brightness = data[x][y]
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
     scrollphathd.show()
-    time.sleep(0.01)
