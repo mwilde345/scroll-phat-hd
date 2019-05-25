@@ -9,11 +9,11 @@ from amazon import amazon
 
 seq = ["eye_seq","car","myclock","jokes","jokes","amazon"]
 fileMap = {
-  "eye_seq": blink,
-  "car": look_left,
-  "myclock": look_right,
-  "jokes": look_up,
-  "amazon": look_down
+  "eye_seq": eye_seq,
+  "car": car,
+  "myclock": myclock,
+  "jokes": jokes,
+  "amazon": amazon
 }
 try:
   while True:
