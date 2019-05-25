@@ -8,6 +8,7 @@ from look_down import look_down
 from look_left import look_left
 from look_right import look_right
 from look_up import look_up
+from roll import roll
 
 seq = ["blink","look_left","look_right","look_up","look_down","roll"]
 fileMap = {
