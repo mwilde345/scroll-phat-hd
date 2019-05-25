@@ -47,16 +47,15 @@ jokeList = [
 ]
 
 def jokes():
-  curr_joke = random.choice(jokeList)
+  curr_joke = "     " + random.choice(jokeList)
   curr_joke+="    "
   line_length = scrollphathd.write_string(curr_joke, brightness=0.7)
   # Auto scroll using a while + time mechanism (no thread)
   scrollphathd.scroll(0,0)
   scrollphathd.show()
-  time.sleep(.8)
   for x in range(line_length):
       scrollphathd.scroll(1, 0)
-      time.sleep(.01)
+      time.sleep(.007)
       scrollphathd.show()
   scrollphathd.scroll(0,0)
   scrollphathd.clear()
