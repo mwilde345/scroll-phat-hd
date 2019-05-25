@@ -4,8 +4,8 @@ import time
 import scrollphathd
 IMAGE_BRIGHTNESS = .6
 
-CAR_1 = get_image_data("./images/car_wheel_1.bmp")
-CAR_2 = get_image_data("./images/car_wheel_2.bmp")
+CAR_1 = get_image_data("car_wheel_1.bmp")
+CAR_2 = get_image_data("car_wheel_2.bmp")
 
 
 def look_down(num):
