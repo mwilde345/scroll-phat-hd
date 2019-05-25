@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import scrollphathd
+import random
+import time
 
 from eye_seq import eye_seq
 from car import car
