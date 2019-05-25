@@ -14,14 +14,14 @@ def look_down(num):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
           brightness = CAR_1[x][y]
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
-    scrollphathd.fill(0, x=-8, y=7)
+    scrollphathd.fill(0, x=8, y=7)
     scrollphathd.show()
   else:
     for x in range(0, scrollphathd.DISPLAY_WIDTH):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
           brightness = CAR_2[x][y]
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
-    scrollphathd.fill(0, x=-8, y=7)
+    scrollphathd.fill(0, x=8, y=7)
     scrollphathd.show()
 
 def car():
