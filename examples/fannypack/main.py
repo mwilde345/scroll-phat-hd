@@ -9,7 +9,7 @@ from myclock import myclock
 from jokes import jokes
 from amazon import amazon
 
-seq = ["eye_seq","car","myclock","jokes","jokes","amazon"]
+seq = ["eye_seq","car","myclock","jokes","amazon"]
 fileMap = {
   "eye_seq": eye_seq,
   "car": car,
@@ -21,7 +21,8 @@ try:
   while True:
     item = random.choice(seq)
     fileMap[item]()
-    time.sleep(random.randint(1,3))
+    scrollphathd.clear()
+    scrollphathd.show()
 except KeyboardInterrupt:
   scrollphathd.fill(0)
   scrollphathd.show()
