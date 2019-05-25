@@ -25,7 +25,7 @@ def car():
   scrollphathd.show()
   look_down(1)
   scrollphathd.fill(0, x=8, y=7)
-  for x in range(51):
+  for x in range(scrollphathd.DISPLAY_WIDTH * 10):
       look_down(x%2)
       scrollphathd.scroll(-1, 0)
       time.sleep(.01)
