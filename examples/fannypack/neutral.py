@@ -1,6 +1,5 @@
 #!/usr/bin/python
-from eye import get_eye_data
-from image_load imporimport time
+from image_load import get_image_data
 import scrollphathd
 IMAGE_BRIGHTNESS = .6
 
