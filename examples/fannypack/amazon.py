@@ -10,13 +10,13 @@ def amazon():
   for z in range(8):
     for x in range(0, scrollphathd.DISPLAY_WIDTH):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
-          brightness = NEUTRAL[x][y]
+          brightness = AMZN[x][y]
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
     scrollphathd.show()
     time.sleep(.5)
     for x in range(0, scrollphathd.DISPLAY_WIDTH):
       for y in range(0, scrollphathd.DISPLAY_HEIGHT):
-          brightness = NEUTRAL[x][y]
+          brightness = AMZN_NEG[x][y]
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
     scrollphathd.show()
     time.sleep(.5)
