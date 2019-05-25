@@ -43,7 +43,17 @@ jokeList = [
   "I used to work in a shoe recycling shop. It was sole destroying.",
   "Did I tell you the time I fell in love during a backflip?----- I was heels over head.",
   "I don’t play soccer because I enjoy the sport. I’m just doing it for kicks.",
-  "People don’t like having to bend over to get their drinks. We really need to raise the bar."
+  "People don’t like having to bend over to get their drinks. We really need to raise the bar.",
+  "Hello!",
+  "Hey there!",
+  "Hey, what you lookin at?",
+  "Yeah, I'm a robot, so what??",
+  "Created by Matthew Wilde",
+  "Miraclebob",
+  "What's up?",
+  "Hey, it's not nice to stare!",
+  "Yeah, I see you too!",
+  "Like what you're seein?"
 ]
 
 def jokes():
