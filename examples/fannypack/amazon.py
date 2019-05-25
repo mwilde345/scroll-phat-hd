@@ -20,3 +20,5 @@ def amazon():
           scrollphathd.pixel(x, y, brightness * IMAGE_BRIGHTNESS)
     scrollphathd.show()
     time.sleep(.5)
+  scrollphathd.clear()
+  scrollphathd.show()
